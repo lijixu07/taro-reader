@@ -43,19 +43,27 @@ class App extends Component {
       list: [
         {
           pagePath: 'pages/index/index',
-          text: '首页'
+          text: '首页',
+          iconPath: 'assets/tabbar/index.png',
+          selectedIconPath: 'assets/tabbar/index_active.png'
         },
         {
           pagePath: 'pages/index/index',
-          text: '书架'
+          text: '书海',
+          iconPath: 'assets/tabbar/book.png',
+          selectedIconPath: 'assets/tabbar/book_active.png'
         },
         {
           pagePath: 'pages/index/index',
-          text: '申请'
+          text: '书架',
+          iconPath: 'assets/tabbar/bookshelf.png',
+          selectedIconPath: 'assets/tabbar/bookshelf_active.png'
         },
         {
           pagePath: 'pages/index/index',
-          text: '我的'
+          text: '我的',
+          iconPath: 'assets/tabbar/mine.png',
+          selectedIconPath: 'assets/tabbar/mine_active.png'
         }
       ]
     }
