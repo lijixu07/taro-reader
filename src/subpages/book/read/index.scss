@@ -1,0 +1,159 @@
+page {
+  background-color:#f2eeeb;
+}
+.read-container {
+  background-color: rgb(242, 238, 235);
+  .read-title {
+    color: #000;
+    font: bold 18PX 'Microsoft Yahei';
+    padding-bottom: 10PX;
+  }
+  .read-content {
+    Text {
+      color: rgb(87, 83, 80);
+      font: normal 16PX 'Microsoft Yahei';
+      text-align: justify;
+    }
+  }
+  .read-action {
+    padding: 20PX 0;
+    .next-chapter,
+    .prev-chapter,
+    .read-director {
+      border-radius: 20PX;
+      border: 1PX solid rgb(160, 156, 153);
+      text-align: center;
+      height: 38PX;
+      line-height: 38PX;
+      Text {
+        color: rgb(159, 155, 152);
+        font: 600 16PX 'Microsoft Yahei';
+      }
+
+    }
+    .action-last {
+      display: flex;
+      justify-content: space-between;
+      padding: 10PX 0;
+      .prev-chapter,
+      .read-director {
+        width: 48%;
+      }
+    }
+  }
+  .disabled {
+    border: 1px solid rgba(192, 188, 185, 0.5) !important;
+    filter: grayscale(80%);
+    Text {
+      color: rgba(200, 196, 193, 0.5) !important;
+    }
+  }
+  .drawer-title {
+    padding: 13PX;
+    font-size: 18PX;
+  }
+  .drawer-item {
+    .at-list__item-extra {
+      flex: 0 0 0 !important;
+      width: 0 !important;
+    }
+    .item-content__info-title {
+      font-size: 15PX;
+    }
+  }
+  .drawer-actived {
+    color: rgb(24, 144, 255);
+  }
+
+  .bottom-sheet {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    background-color: rgb(70, 70, 70);
+    height: 0;
+    transition: height 0.5s ease-out;
+    .read-font {
+      padding: 20PX 15PX;
+      display: flex;
+      justify-content: space-between;
+      .font-decrease,
+      .font-increase {
+        width: 15%;
+        border: 1px solid rgb(97, 96, 96);
+        border-radius: 5PX;
+        height: 36PX;
+        line-height: 36PX;
+        text-align: center;
+        Text {
+          color: #ffffff;
+          font-size: 15PX;
+        }
+      }
+      .font-line {
+        width: 60%;
+        height: 3PX;
+        background-color: rgb(109, 109, 109);
+        align-self: center;
+        .progress-line {
+          width: 40%;
+          height: 3PX;
+          background-color: rgb(24, 144, 255);
+        }
+      }
+    }
+
+    .read-mode {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 15PX 20PX 15PX;
+      .mode-default,
+      .mode-night,
+      .mode-eye {
+        width: 30%;
+        border: 1px solid rgb(97, 96, 96);
+        border-radius: 5PX;
+        height: 34PX;
+        line-height: 34PX;
+        text-align: center;
+        Text {
+          color: #ffffff;
+          font-size: 14PX;
+        }
+      }
+      .mode-night {
+        background-color: rgb(20, 20, 20);
+      }
+      .mode-eye {
+        background-color: rgb(200, 237, 204);
+      }
+      .mode-actived {
+        border-color: rgb(40, 41, 41);
+        Text {
+          color: rgb(59, 159, 253);
+        }
+      }
+    }
+
+    .read-operate {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 15PX 20PX 15PX;
+      .prev-chapter,
+      .book-director,
+      .next-chapter {
+        width: 30%;
+        border: 1px solid rgb(97, 96, 96);
+        border-radius: 5PX;
+        height: 34PX;
+        line-height: 34PX;
+        text-align: center;
+        Text {
+          color: #ffffff;
+          font-size: 14PX;
+        }
+      }
+    }
+
+  }
+}

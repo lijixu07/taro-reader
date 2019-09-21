@@ -1,14 +1,15 @@
 {
 	"miniprogramRoot": "dist/",
-	"projectname": "reader",
-	"description": "reader",
-	"appid": "wx5b2d72830ebec1e8",
+	"projectname": "taro-reader",
+	"description": "wxapp reader for taro",
+	"appid": "wx5039491c8456fdee",
 	"setting": {
 		"urlCheck": true,
 		"es6": false,
 		"postcss": false,
 		"minified": false
 	},
+	"cloudfunctionRoot": "cloudFunctions/",
 	"compileType": "miniprogram",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
