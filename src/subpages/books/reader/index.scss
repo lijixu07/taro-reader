@@ -1,0 +1,29 @@
+.container {
+  padding: 30px 40px;
+  background-color: rgb(13, 13, 13);
+  .bottom {
+    width: 100%;
+    padding: 0 100px;
+  }
+  .title {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: rgb(82, 85, 82);
+    padding: 15px 50px;
+  }
+  .btns {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    .btn {
+      width: 50%;
+      height: 100%;
+      line-height: 100px;
+    }
+  }
+}

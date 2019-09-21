@@ -1,0 +1,11 @@
+.container {
+  padding-top: 100px;
+  .avatar {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 50px;
+  }
+  .login-btn {
+    width: 80%;
+  }
+}

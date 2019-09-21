@@ -1,0 +1,83 @@
+.container {
+  .book-con {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 30px;
+    height: calc(100vh - 90px);
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    .book {
+      width: 204px;
+      margin-bottom: 40px;
+      .img {
+        width: 204px;
+        height: 255px;
+        background-color: #f2f2f2;
+        box-shadow: 10px 10px 10px silver;
+        margin-bottom: 5px;
+      }
+      .title {
+        font-size: 30px;
+        line-height: 30px;
+        min-height: 30px;
+      }
+      .desc {
+        font-size: 24px;
+        color: #999;
+        line-height: 24px;
+        min-height: 24px;
+        margin-top: 15px;
+      }
+    }
+  }
+  .records-list {
+    width: 100%;
+    padding: 0 30px;
+    height: calc(100vh - 90px);
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+    .list-item {
+      padding: 30px 0;
+      // border-bottom: 1px solid #e1e1e1;
+    }
+    .list-item + .list-item {
+      border-top: 1px solid #e1e1e1;
+    }
+    .list-item-img {
+      width: 114.8px;
+      height: 151.7px;
+      box-shadow: 8px 8px 8px silver;
+      // border-bottom: 2px #b5aeac solid;
+    }
+    .list-item-right {
+      width: 520px;
+      height: 182px;
+    }
+    .list-item-title {
+      width: 100%;
+      font-weight: 700;
+      font-size: 30px;
+      margin-bottom: 10px;
+      color: #555;
+    }
+    .list-item-author {
+      font-weight: 400;
+      font-size: 24px;
+      color: #666;
+      line-height: 36px;
+      margin-bottom: 10px;
+    }
+    .list-item-desc {
+      width: 100%;
+      font-weight: 400;
+      font-size: 24px;
+      color: #888;
+      line-height: 36px;
+    }
+    .list-bottom {
+      width: 100%;
+      padding: 0 100px;
+    }
+  }
+}
