@@ -27,7 +27,8 @@ Taro.addInterceptor(Taro.interceptors.timeoutInterceptor)
 
 
 
-const baseUrl = 'http://172.20.10.11:3000/api'
+// const baseUrl = 'http://172.20.10.11:3000/api'
+const baseUrl = 'http://192.168.0.124:3000/api'
 
 const $get =  (url, data = {}) => {
   return new Promise((resolve, reject) => {
@@ -38,7 +39,7 @@ const $get =  (url, data = {}) => {
       resolve(res.data)
     }).catch(err => {
       reject(err.data)
-    }) 
+    })
   })
 }
 
@@ -52,7 +53,7 @@ const $post =  (url, data = {}) => {
       resolve(res.data)
     }).catch(err => {
       reject(err.data)
-    }) 
+    })
   })
 }
 
